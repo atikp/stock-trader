@@ -1,0 +1,21 @@
+{
+  "name": "express",
+  "version": "1.0.0",
+  "description": "stock trading app ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^9.0.2",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.2",
+    "finnhub": "^1.2.1",
+    "mysql2": "^2.2.5",
+    "request": "^2.88.2",
+    "sequelize": "^6.6.2",
+    "serve-favicon": "^2.5.0"
+  }
+}

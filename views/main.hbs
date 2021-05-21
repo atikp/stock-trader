@@ -1,0 +1,11 @@
+{{>header}}
+<h1>Stocks List</h1>
+<ul>
+  {{#each stockList}}
+  <div>
+    <li><a href="http://localhost:3000/{{this.id}}">{{this.companyName}}</a></li>
+    <li><a href="http://localhost:3000/{{this.id}}">currentPrice: {{this.sharePriceCurrent}}</a></li>
+  </div>
+  {{/each}}
+</ul>
+{{>footer}}
