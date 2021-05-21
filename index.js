@@ -21,7 +21,6 @@ const request = require("request")
 //finhubEnd
 setInterval(() => {
   getStocks()
-
 }, 5000);
 const getStocks = ()=>{
   finnhubClient.quote("AAPL",(error, data, response) => {
