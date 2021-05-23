@@ -33,7 +33,6 @@ app.get('/userbalance/:id',async (req, res, next)=>{
 app.patch('/userbalance/:id',(req, res)=>{
   const {id} = req.params
   const newData = req.body;
-  res.status(200).json(newData);
   User.update(newData,{where:{id: id}})
   res.status(200).json(req.body);
 });
