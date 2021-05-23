@@ -1,0 +1,25 @@
+body {
+  display: flex;
+  font-family: sans-serif;
+}
+
+.list {
+  display: flex;
+  list-style: none;
+}
+
+.list li{
+  display: flex;
+  flex-direction: column;
+  margin:1rem;
+}
+
+.stocks .list form{
+  display: flex;
+  flex-direction:column;
+}
+.stocks .list form .buttons{
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem;
+}
