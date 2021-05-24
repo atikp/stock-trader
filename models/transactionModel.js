@@ -12,12 +12,12 @@ const Transaction = sequelize.define(
     sharePriceOnSell: {
       type: DataTypes.STRING,
     },
-    quantity: {
-      type: DataTypes.INTEGER,
-    },
     userId: {
       type: DataTypes.INTEGER,
     },
+    shareAmmount: {
+      type: DataTypes.INTEGER,
+    }
   },
   {
     timestamps: false,
