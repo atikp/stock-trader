@@ -38,8 +38,8 @@ companyList.forEach((company) => {
   <form action="">
     <input type="text">
       <div class="buttons">
-        <button class="buy" name="buy" value="buy" type="submit">buy</button>
-        <button class="sell" name="sell" value="sell"type="submit" >sell</button>
+        <button class="buy" name="buy" value="buy" type="submit">Buy</button>
+        <button class="sell" name="sell" value="sell"type="submit" >Sell</button>
 
       </div>
       <div class="totals">
@@ -114,6 +114,7 @@ stockList.addEventListener("click", async (event) => {
     const actualSharesStillOwned = totalSharesOwned - totalSharesSold;
     console.log(totalSharesOwned, totalSharesSold, actualSharesStillOwned);
     totalSharesOwnedEl.innerText = actualSharesStillOwned;
+    
     totalEl.innerText = total;
     const currentBalance = parseInt(balanceEl.innerText);
     if (currentBalance >= total) {

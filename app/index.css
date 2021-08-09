@@ -2,25 +2,77 @@ body {
   display: flex;
   flex-direction: column;
   font-family: sans-serif;
+  justify-content: center;
+  align-items: center;
+  background:url('./img/pexels-tatiana-fet-1105766.jpg');
+  color: #fff;
+  
 }
 
 .list {
   display: flex;
   list-style: none;
+  align-items: space-around;
+  flex-wrap: wrap;
 }
 
 .list li{
   display: flex;
   flex-direction: column;
   margin:1rem;
+  padding: 2rem;
+  align-items: center;
+  max-width: 13rem;
+  border-radius: 20px;
+  background: rgba( 255, 255, 255, 0.30 );
+box-shadow: 0 8px 32px 0 rgba(15, 16, 31, 0.37);
+backdrop-filter: blur( 12.5px );
+-webkit-backdrop-filter: blur( 12.5px );
+/* border-radius: 10px; */
+  /* background: #8777da;
+box-shadow:  -20px 20px 60px #7365ba,
+             20px -20px 60px #9b89fc;  */
 }
-
+.list li .stockName {
+  text-transform: uppercase;
+}
 .stocks .list form{
   display: flex;
   flex-direction:column;
+}
+.stocks .list form input {
+  border-radius: 15px;
+  border: none;
+  padding: .5rem;
+  outline: none;
 }
 .stocks .list form .buttons{
   display: flex;
   justify-content: space-between;
   margin: 1rem;
+  
+}
+.stocks .list form .buttons button{
+  border:none;
+  border-radius: 15px;
+  padding:.5rem;
+  width: 4rem;
+  color: #fff;
+  margin:1rem;
+}
+.stocks .list form .buttons .buy{
+  background-color:forestgreen;
+}
+.stocks .list form .buttons .sell{
+  background-color:black;
+}
+
+.stocks .list form.totals {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.stocks .list form .totals .total{
+  margin-top:1rem;
 }
